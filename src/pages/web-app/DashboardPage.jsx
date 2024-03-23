@@ -12,6 +12,7 @@ const DashboardPage = () => {
       <Sidebar />
       <div className="w-4/5 bg- h-full p-[5%]">
         <HeaderName />
+        
       </div>
     </div>
   );
