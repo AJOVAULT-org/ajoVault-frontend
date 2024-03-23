@@ -51,6 +51,13 @@ body
   margin-bottom: 2em;
   font-size: 12px;
 }
+/* input side */
+.user-input
+{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
 .user-input input{
   border: 1px solid var(--fade-color2);
   height: 2em;
@@ -60,18 +67,13 @@ body
   text-transform: capitalize;
   margin-top: 1em;
 }
-.user-input
+.input-side
 {
   background: #989898;
   display: flex;
   height: 85vh;
   flex-direction: column;
 }
-.user-form
-{
-  margin: 3em;
-}
-
 /* paragraphs */
 .main-paragraph
 {

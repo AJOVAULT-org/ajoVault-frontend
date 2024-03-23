@@ -11,7 +11,7 @@ const SignUpPage = () => {
         <img src={ajoLogo2} />
             <div className="text">
                 <h1>achieve your  financial goals with our solutions</h1>
-                <p>join  other wise nigerians to revolutionise personal finace by combining individual svings with pool contribution.</p>
+                <Paragraph class="light-paragraph" ParagraphText="join  other wise nigerians to revolutionise personal finace by combining individual svings with pool contribution." />
             </div>
         </div>
         <div className="input-side">
