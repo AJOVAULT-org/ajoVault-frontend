@@ -71,3 +71,13 @@ body
 {
   margin: 3em;
 }
+
+/* paragraphs */
+.main-paragraph
+{
+  font-family: var(--main-font);
+  color: #0e0e0e84;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+}
