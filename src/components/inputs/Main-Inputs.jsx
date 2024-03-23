@@ -5,6 +5,7 @@ function Inputs(props) {
     <div className='user-input'>
       <label htmlFor={props.id}>{props.label}</label>
       <input 
+        className='sign-up-form'
         type={props.type} 
         name={props.name} 
         id={props.id} 
