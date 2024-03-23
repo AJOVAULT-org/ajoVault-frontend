@@ -1,6 +1,7 @@
 import React from 'react'
 import { ajoLogo2 } from '../../../public/assets';
 import Inputs from '../../components/inputs/Main-Inputs';
+import Mainheader from '../../components/headers/Main-header';
 
 const SignUpPage = () => {
   return (
@@ -13,9 +14,12 @@ const SignUpPage = () => {
             </div>
         </div>
         <div className="input-side">
-        <form action="/" method=''>
-        <Inputs label="Full Name" type="text" id="fullName" placeholder="enter your first name then last name"/>
-        </form>
+          <Mainheader />
+          <div className="user-form">
+           <form action="/" method=''>
+            <Inputs label="Full Name" type="text" id="fullName" placeholder="enter your first name then last name"/>
+           </form>
+         </div>
         </div>
     </section>
   )
