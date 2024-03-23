@@ -4,3 +4,40 @@
   --fade-color1:rgba(181, 170, 252, 1);
   --fade-color2:rgba(157, 142, 251, 1);
 }
+body
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sign-up
+{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.text-side
+{
+  background: url(../public/assets/images/sideimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px 50px;
+}
+.text h1
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 45px;
+  margin: 0;
+  color: #f7f7f7;
+  padding: 0;
+  width: 8em;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 50px;
+  margin-bottom: 2em;
+}

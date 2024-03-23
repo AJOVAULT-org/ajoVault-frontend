@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
 
 function Inputs(props) {
   return (
-    <>
-    <label>{props.label}</label>
-    <input type={props.type} name={props.name} id={props.id} value={props.value} />
-    </>
+    <div>
+      <label htmlFor={props.id}>{props.label}</label>
+      <input 
+        type={props.type} 
+        name={props.name} 
+        id={props.id} 
+        value={props.value} 
+        placeholder={props.placeholder}
+      />
+    </div>
   );
 }
 
-export default Inputs
+export default Inputs;
