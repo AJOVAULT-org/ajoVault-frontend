@@ -4,6 +4,7 @@ import DashboardPage from './pages/web-app/DashboardPage'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from './pages/web-site/LandingPage';
 import SignUpPage from './pages/web-site/SignUpPage';
+import LogInPage from './pages/web-site/LogInPage';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/LogInPage" element={<LogInPage />} />
         <Route path="/user/home" element={<DashboardPage />} />
         <Route path="/user/savings" element={<DashboardPage />} />
         <Route path="/user/withdrawal" element={<DashboardPage />} />
