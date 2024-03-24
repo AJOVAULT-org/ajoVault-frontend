@@ -73,7 +73,3 @@ const SignUpPage = () => {
 }
 
 export default SignUpPage;
-
-
-//  const mandatoryFields = ['fullName', 'email', 'password', 'phoneNumber'];
-// const allMandatoryFieldsFilled = mandatoryFields.every(field => inputValues[field].trim() !== '');
