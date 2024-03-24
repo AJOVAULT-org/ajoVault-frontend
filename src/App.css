@@ -126,6 +126,7 @@ body
   text-transform: capitalize;
   font-size: 13px;
   background-color: var(--fade-color1);
+  /* background-color: var(--primary-color); */
   height: 3em;
   margin-top: 10px;
   margin-bottom: 10px;

@@ -11,6 +11,7 @@ function Inputs(props) {
         id={props.id} 
         value={props.value} 
         placeholder={props.placeholder}
+        onChange={props.change}
       />
     </div>
   );
