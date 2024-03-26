@@ -21,6 +21,7 @@ const SignUpPage = () => {
     const name = e.target.name;
     const value = e.target.value;
     setInputs(values =>({...values,[name]:value}));
+    console.log(value);
   }
 
   useEffect(() => {
