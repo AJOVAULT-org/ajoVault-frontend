@@ -18,7 +18,7 @@ function LogInPage() {
       </div>
     <div className="input-side">
       <div className="user-form">
-         <Mainheader headertext="login" />
+         <Mainheader headertext="login" class="main-header"/>
          <form action="/">
          {/* change={handleChange},value={inputs.email || ""} */}
          <Inputs  label="Email" type="email" id="email" name="email"  placeholder="Enter your email" />
@@ -26,10 +26,8 @@ function LogInPage() {
          <SubmitBtn btntext="login"/>
          </form>
          <div className="sign-in-footer">
-          <div className="border">
-          <svg width="40px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23 13H1v-2h22z"/><path fill="none" d="M0 0h24v24H0z"/></svg> 
+          <div className="borders">
           <h4>or</h4>
-          <svg width="40px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23 13H1v-2h22z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
           </div>
           <div className="google-auth">
             <svg width="40px" height="40px" viewBox="-3 0 262 262" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Mainheader(prop) {
   return (
-    <div className='Main-header'>
+    <div className={prop.class}>
         <h1>{prop.headertext}</h1>
     </div>
   )
