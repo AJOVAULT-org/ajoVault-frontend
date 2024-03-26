@@ -12,7 +12,7 @@ body
   padding: 0;
   box-sizing: border-box;
 }
-.sign-up
+.onBoarding
 {
   height: 100vh;
   width: 100vw;
@@ -29,6 +29,7 @@ body
   align-items: center;
   justify-content: space-between;
   padding:20px 50px;
+  height: 100vh;
 }
 .text h1 {
   font-family: var(--main-font);

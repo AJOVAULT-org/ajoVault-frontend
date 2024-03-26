@@ -42,7 +42,7 @@ const SignUpPage = () => {
 
 
   return (
-    <section className='sign-up'>
+    <section className='onBoarding'>
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />
         <div className="text">
