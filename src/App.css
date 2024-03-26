@@ -170,6 +170,13 @@ body
   color: #0e0e0e;
   font-size: 35px;
 }
+/* footer */
+.sign-in-footer
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .borders
 {
   margin-top: 3em;
@@ -181,8 +188,8 @@ body
   content: "";
   height: 1px;
   width: 150px;
-  top: 23.3em;
-  left: 47.6em;
+  top: 23.6em;
+  left: 48.6em;
   background: var(--primary-color);
   position: absolute;
 }
@@ -191,8 +198,25 @@ body
   content: "";
   height: 1px;
   width: 150px;
-  top: 23.3em;
-  left: 61em;
+  top: 23.6em;
+  left: 61.5em;
   background: var(--primary-color);
   position: absolute;
+}
+.google-auth
+{
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-top: 3em;
+  padding: 5px;
+  margin-bottom: 2em;
+  width: fit-content;
+}
+.purple-paragraph p
+{
+  color: var(--primary-color);
+  font-family: var(--main-font);
+  text-transform: capitalize;
+  font-size: 13px;
+  margin-top: 2em;
 }
