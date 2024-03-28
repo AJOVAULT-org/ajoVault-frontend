@@ -22,6 +22,7 @@ const SignUpPage = () => {
     const name = e.target.name;
     const value = e.target.value;
     setInputs(values =>({...values,[name]:value}));
+    console.log(inputs);
   }
 
   useEffect(() => {
@@ -43,6 +44,7 @@ const SignUpPage = () => {
     const allMandatoryFieldsFilled = mandatoryFields.every(field => inputs[field].trim() !== '');
     // verificationmodel
     setShowVerificationModal(true);
+    console.log("form submitted");
   };
 
   return (
