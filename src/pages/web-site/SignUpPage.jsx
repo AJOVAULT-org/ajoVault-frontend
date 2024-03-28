@@ -35,15 +35,22 @@ const SignUpPage = () => {
     }
   }, [inputs]);  
 
+  const [showVerificationModal, setShowVerificationModal] = useState(false);
+
   const handleSubmit = (e) => {
+    e.preventDefault();
     const mandatoryFields = ['fullName', 'email', 'password', 'phoneNumber'];
     const allMandatoryFieldsFilled = mandatoryFields.every(field => inputs[field].trim() !== '');
-  };
+    
+    // verificationmodel
 
+    setShowVerificationModal(true);
+
+  };
 
   return (
     <section className='onBoarding'>
-      <Verification />
+      {showVerificationModal && <Verification />}
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />
         <div className="text">

@@ -166,7 +166,7 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 .onBoarding
 {
@@ -179,7 +179,7 @@ body
   background: #FBF9F1;
   /* background: #ADC4CE; */
   height: 42vh; 
-  width: 42vw;
+  width: 30vw;
   border-radius: 20px;
   border: 1px solid #0e0e0e;
 }
@@ -226,8 +226,8 @@ body
 .close
 {
   position: absolute;
-  top:10.2em;
-  left: 43em;
+  top: 11em;
+  left: 56em;
   background: #f7f7f7;
   border: #0e0e0e 1px solid;
   width: 40px;
