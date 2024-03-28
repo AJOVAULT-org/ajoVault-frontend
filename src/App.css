@@ -225,7 +225,7 @@ body
 /* models */
 .Main-overlay
 {
-  background: #f5eee683 ;
+  background: #0f0f0f7e ;
   height: 100vh;
   width: 100vw;
   font-family: var(--main-font);
@@ -249,7 +249,7 @@ body
   height: 42vh; 
   width: 30vw;
   border-radius: 20px;
-  border: 1px solid #0e0e0e;
+  /* border: 1px solid #0e0e0e; */
 }
 .model-paragraph p{
   font-size: 20px;
@@ -297,7 +297,7 @@ body
   top: 11em;
   left: 56em;
   background: #f7f7f7;
-  border: #0e0e0e 1px solid;
+  /* border: #0e0e0e 1px solid; */
   width: 40px;
   height: 40px;
   padding: 10px;
@@ -316,7 +316,7 @@ body
   height: 42vh; 
   width: 30vw;
   border-radius: 20px;
-  border: 1px solid #0e0e0e;
+  /* border: 1px solid #0e0e0e; */
   display: flex;
   flex-direction: column;
   align-items: center;

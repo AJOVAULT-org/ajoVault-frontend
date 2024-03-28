@@ -6,7 +6,6 @@ import Mainheader from '../../components/headers/Main-header';
 import Paragraph from '../../components/paragraphs';
 import SubmitBtn from '../../components/buttons/submit-btn';
 import Verification from '../../components/models/verification';
-
 const SignUpPage = () => {
 
   // states

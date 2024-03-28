@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Paragraph from '../paragraphs';
-import SmallHeader from '../headers/smallHeader';
+import SmallHeader from '../headers/SmallHeader';
 import CheckOtp from './checkOtp';
 
 function Verification({ isOpen }) {
