@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InputOtp from "./InputOtp";
-import SmallHeader from "../headers/SmallHeader";
+import SmallHeader from "../headers/smallHeader";
 
 function CheckOtp() {
   const [showOtp, setOtp] = useState(false);

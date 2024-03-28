@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { useEffect } from 'react'
 import OtpInput from '../inputs/otpInputs'
 import Paragraph from '../paragraphs'
-import SmallHeader from '../headers/SmallHeader';
+import SmallHeader from '../headers/smallHeader';
 
 
 function InputOtp() {
