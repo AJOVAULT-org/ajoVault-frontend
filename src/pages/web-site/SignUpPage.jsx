@@ -5,6 +5,7 @@ import Inputs from '../../components/inputs/Main-Inputs';
 import Mainheader from '../../components/headers/Main-header';
 import Paragraph from '../../components/paragraphs';
 import SubmitBtn from '../../components/buttons/submit-btn';
+import Verification from '../../components/models/verification';
 
 const SignUpPage = () => {
 
@@ -21,7 +22,6 @@ const SignUpPage = () => {
     const name = e.target.name;
     const value = e.target.value;
     setInputs(values =>({...values,[name]:value}));
-    console.log(value);
   }
 
   useEffect(() => {
@@ -38,12 +38,12 @@ const SignUpPage = () => {
   const handleSubmit = (e) => {
     const mandatoryFields = ['fullName', 'email', 'password', 'phoneNumber'];
     const allMandatoryFieldsFilled = mandatoryFields.every(field => inputs[field].trim() !== '');
-    console.log('Form submitted.');
   };
 
 
   return (
-    <section className='sign-up'>
+    <section className='onBoarding'>
+      <Verification />
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />
         <div className="text">
