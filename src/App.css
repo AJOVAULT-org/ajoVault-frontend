@@ -142,6 +142,10 @@ body
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.submit-btn
+{
+  pointer-events:none;
+}
 .footer
 {
   display: flex;
@@ -219,4 +223,192 @@ body
   text-transform: capitalize;
   font-size: 13px;
   margin-top: 2em;
+}
+/* models */
+.Main-overlay
+{
+  background: #0f0f0f7e ;
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--main-font);
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+.onBoarding
+{
+  position: relative;
+  z-index: 2;
+}
+.verification-model
+{
+  padding: 30px 20px;
+  background: #FBF9F1;
+  /* background: #ADC4CE; */
+  height: 42vh; 
+  width: 30vw;
+  border-radius: 20px;
+  /* border: 1px solid #0e0e0e; */
+}
+.model-paragraph p{
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 300;
+  /* width: 18em; */
+}
+.header
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.model-paragraph-small p
+{
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #0e0e0e84;
+}
+.email-box
+{
+  background: var(--fade-color1);
+  padding: 10px;
+  border-radius: 10px;
+  color: #f7f7f7;
+  height: 15vh;
+}
+.small-header h1
+{
+  font-size: 25px; 
+}
+.veri-paragraph p
+{
+  font-size: 12px;
+  /* text-align: center; */
+  font-weight: 300;
+  margin-left: 40px;
+}
+.close
+{
+  position: absolute;
+  top: 11em;
+  left: 56em;
+  background: #f7f7f7;
+  /* border: #0e0e0e 1px solid; */
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+/* checkOtp */
+.CheckOtp-model
+{
+  padding: 30px 20px;
+  background: #FBF9F1;
+  /* background: #ADC4CE; */
+  height: 42vh; 
+  width: 30vw;
+  border-radius: 20px;
+  /* border: 1px solid #0e0e0e; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.CheckOtp-model button
+{
+  width: 364px;
+  border-radius: 10px;
+  color: #f7f7f7;
+  margin-left: 10px;
+  font-family: var(--main-font);
+  text-transform: capitalize;
+  font-size: 13px;
+  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  height: 5em;
+  margin-top: 10px;
+  pointer-events: visible;
+  margin-bottom: 10px;
+}
+.otp-header h1
+{
+  font-size: 25px;
+  width: 10em;
+  text-align: center;
+}
+/* otp-input */
+.otp-input input
+{
+  border: 1px solid var(--fade-color1);
+  width: 60px;
+  background: rgba(181, 170, 252, 0.227);
+  height: 60px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.otp-form
+{
+  padding: 30px 20px;
+  background: #FBF9F1;
+  /* background: #ADC4CE; */
+  height: 53vh; 
+  width: 37vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+.otp-form button
+{
+  width: 364px;
+  border-radius: 10px;
+  color: #f7f7f7;
+  margin-left: 10px;
+  font-family: var(--main-font);
+  text-transform: capitalize;
+  font-size: 13px;
+  background-color: var(--fade-color2);
+  height: 3.5em;
+  margin-top: 10px;
+  pointer-events: visible;
+  margin-bottom: 10px;
+}
+.otp-form h1
+{
+  font-size: 25px;
+  color: #0e0e0e;
+  text-align: center;
+}
+.otp-form p
+{
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #0e0e0e84;
+}
+.otp-inputs
+{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+.otp-input input:focus
+{
+  outline: none;
 }

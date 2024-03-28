@@ -5,8 +5,10 @@ import Inputs from '../../components/inputs/Main-Inputs';
 import Mainheader from '../../components/headers/Main-header';
 import Paragraph from '../../components/paragraphs';
 import SubmitBtn from '../../components/buttons/submit-btn';
-
+import Verification from '../../components/models/verification';
 const SignUpPage = () => {
+
+  // states
 
   const [inputs ,setInputs]= useState({
     fullName:"",
@@ -14,36 +16,43 @@ const SignUpPage = () => {
     password:"",
     phoneNumber:""
   });
+  const [showVerificationModal, setShowVerificationModal] = useState(false);
+  const [isBtnActive, setBtnAction] = useState({});
 
-  const [btnBg, setBtnBg] = useState({});
-
+  // functions
   const handleChange=(e)=>{
     const name = e.target.name;
     const value = e.target.value;
     setInputs(values =>({...values,[name]:value}));
-    console.log(value);
   }
 
+  // to check if form is having values
   useEffect(() => {
     const mandatoryFields = ['fullName', 'email', 'password', 'phoneNumber'];
     const allMandatoryFieldsFilled = mandatoryFields.every(field => inputs[field].trim() !== '');
-  
+    const isPromoCodeFilled = !!(inputs.promoCode && inputs.promoCode.trim() !== '');
+
     if (allMandatoryFieldsFilled && (inputs.promoCode === undefined || inputs.promoCode.trim() !== '')) {
-      setBtnBg({ backgroundColor: 'rgba(90, 71, 207, 1)' });
+      setBtnAction({  pointerEvents: "visible", backgroundColor: 'rgba(90, 71, 207, 1)'});
     } else {
-      setBtnBg({ backgroundColor: 'rgba(181, 170, 252, 1)' });
+      setBtnAction({  pointerEvents: "none", backgroundColor: 'rgba(181, 170, 252, 1)'});
     }
   }, [inputs]);  
 
+  // to handle submit
   const handleSubmit = (e) => {
+    e.preventDefault();
     const mandatoryFields = ['fullName', 'email', 'password', 'phoneNumber'];
     const allMandatoryFieldsFilled = mandatoryFields.every(field => inputs[field].trim() !== '');
-    console.log('Form submitted.');
+    
+    // verificationmodel
+    setShowVerificationModal(true);
   };
-
 
   return (
     <section className='onBoarding'>
+      {/* {showVerificationModal && <Verification isOpen={showVerificationModal} isClose={() => setShowVerificationModal(false)}/>} */}
+      {showVerificationModal && <Verification isOpen={showVerificationModal} />}
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />
         <div className="text">
@@ -63,7 +72,7 @@ const SignUpPage = () => {
             <Inputs change={handleChange} label="Phone Number" type="tel" id="phoneNumber" name="phoneNumber" value={inputs.phoneNumber || ""} placeholder="Enter your phone number" />
             <Inputs change={handleChange} label="Password" type="password" id="password" name="password" value={inputs.password || ""} placeholder="Enter your password" />
             <Inputs change={handleChange} label="Promo Code (Optional)" type="text" id="promoCode" name="promoCode" value={inputs.promoCode || ""} placeholder="Enter promo code" />
-            <SubmitBtn style={btnBg} btntext="Create Account" />
+            <SubmitBtn type="submit" style={isBtnActive} btntext="Create Account" />
           </form>
           <div className="footer">
             <Paragraph class="dark-paragraph" ParagraphText="Already have an account?" />
