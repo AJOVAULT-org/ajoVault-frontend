@@ -174,19 +174,20 @@ body
 }
 .verification-model
 {
-  padding: 10px;
+  padding: 30px 20px;
   background: #FBF9F1;
   /* background: #ADC4CE; */
-  height: 40vh; 
-  width: 45vw;
+  height: 42vh; 
+  width: 42vw;
   border-radius: 20px;
   border: 1px solid #0e0e0e;
 }
 .model-paragraph p{
-  font-size: 23px;
+  font-size: 20px;
   line-height: 30px;
   text-align: center;
   font-weight: 300;
+  /* width: 18em; */
 }
 .header
 {
@@ -200,6 +201,7 @@ body
   text-align: center;
   margin-top: 10px;
   margin-bottom: 30px;
+  color: #0e0e0e84;
 }
 .email-box
 {
@@ -207,14 +209,15 @@ body
   padding: 10px;
   border-radius: 10px;
   color: #f7f7f7;
+  height: 15vh;
 }
 .small-header h1
 {
-  font-size: 20px; 
+  font-size: 25px; 
 }
 .veri-paragraph p
 {
-  font-size: 10px;
+  font-size: 12px;
   /* text-align: center; */
   font-weight: 300;
   margin-left: 40px;

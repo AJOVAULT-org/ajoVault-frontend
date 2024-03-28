@@ -10,7 +10,7 @@ function Verification() {
             <div></div>
         </div>
         <div className="verification-model">
-            <Paragraph ParagraphText= " We need you to verify email address" class="model-paragraph"/>
+            <Paragraph ParagraphText= " We need you to verify email address ar***e@gmail.com" class="model-paragraph"/>
             <Paragraph ParagraphText="please select how you want to be verified below" class="model-paragraph-small" />
             <div className="email-box">
                 <div className="header">
@@ -20,9 +20,9 @@ function Verification() {
                 </g>
                 </svg>
 
-                    <SmallHeader headertext="Verify now"  class="small-header"/>
+                    <SmallHeader headertext="Verify with email"  class="small-header"/>
                 </div>
-                <Paragraph ParagraphText="we will send you an OTP to your number through Whatsapp and sms"  class="veri-paragraph" />
+                <Paragraph ParagraphText="We will send you an OTP to your number through Whatsapp and sms"  class="veri-paragraph" />
             </div>
         </div>
     </div>
