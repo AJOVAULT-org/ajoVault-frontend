@@ -352,6 +352,8 @@ body
   width: 60px;
   background: rgba(181, 170, 252, 0.227);
   height: 60px;
+  text-align: center;
+  font-size: 25px;
   border-radius: 10px;
 }
 .otp-form
@@ -403,4 +405,8 @@ body
   gap: 20px;
   justify-content: center;
   margin: 20px;
+}
+.otp-input input:focus
+{
+  outline: none;
 }

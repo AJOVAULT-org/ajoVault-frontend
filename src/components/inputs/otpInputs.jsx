@@ -4,6 +4,9 @@ function OtpInput(props) {
   return (
     <div className="otp-input">
         <input 
+        maxLength={1}
+        inputMode="numeric"
+        pattern="[0-9]*"
         className={props.class}
         type={props.type} 
         name={props.name} 
