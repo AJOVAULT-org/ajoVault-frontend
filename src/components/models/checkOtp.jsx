@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SmallHeader from '../headers/SmallHeader';
+import InputOtp from './InputOtp';
 
 function CheckOtp() {
     const [showOtp, setOtp] = useState(false);
@@ -7,10 +8,13 @@ function CheckOtp() {
 
     const handleBtn = () => {
         console.log("clicked man");
+        setOtp(true);
+        hideCheckOtp(false);
     }
 
     return (
         <div>
+            {showOtp && <InputOtp />}
             {displayCheckOtp && (
                 <div className='CheckOtp-model'>
                     <svg width="50px" height="50px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">

@@ -3,9 +3,8 @@ import React from 'react'
 function OtpInput(props) {
   return (
     <div className="otp-input">
-        <label htmlFor={props.id}>{props.label}</label>
         <input 
-        className='sign-up-form'
+        className={props.class}
         type={props.type} 
         name={props.name} 
         id={props.id} 

@@ -345,3 +345,62 @@ body
   width: 10em;
   text-align: center;
 }
+/* otp-input */
+.otp-input input
+{
+  border: 1px solid var(--fade-color1);
+  width: 60px;
+  background: rgba(181, 170, 252, 0.227);
+  height: 60px;
+  border-radius: 10px;
+}
+.otp-form
+{
+  padding: 30px 20px;
+  background: #FBF9F1;
+  /* background: #ADC4CE; */
+  height: 53vh; 
+  width: 37vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+}
+.otp-form button
+{
+  width: 364px;
+  border-radius: 10px;
+  color: #f7f7f7;
+  margin-left: 10px;
+  font-family: var(--main-font);
+  text-transform: capitalize;
+  font-size: 13px;
+  background-color: var(--fade-color2);
+  height: 3.5em;
+  margin-top: 10px;
+  pointer-events: visible;
+  margin-bottom: 10px;
+}
+.otp-form h1
+{
+  font-size: 25px;
+  color: #0e0e0e;
+  text-align: center;
+}
+.otp-form p
+{
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #0e0e0e84;
+}
+.otp-inputs
+{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
