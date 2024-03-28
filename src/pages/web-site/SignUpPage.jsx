@@ -67,13 +67,16 @@ const SignUpPage = () => {
         <div className="user-form">
           <div className="user-inner">
             <div className="header-text">
-              <Mainheader headertext="Create a secure account" />
+              <Mainheader headertext="Create a secure account"
+              class="main-header" />
               <Paragraph
                 class="main-paragraph"
                 ParagraphText="Easily meet your saving goals with AjoVault"
               />
             </div>
-            <form onSubmit={handleSubmit}>
+            <form 
+            className="signup-form"
+            onSubmit={handleSubmit}>
               <Inputs
                 change={handleChange}
                 label="Full Name"
@@ -81,7 +84,7 @@ const SignUpPage = () => {
                 id="fullName"
                 name="fullName"
                 value={inputs.fullName || ""}
-                placeholder="Enter your first inputValues then last name"
+                placeholder="Enter your first Name then last name"
               />
               <Inputs
                 change={handleChange}

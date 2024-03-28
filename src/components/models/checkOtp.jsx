@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InputOtp from "./InputOtp";
-import SmallHeader from "../headers/smallHeader";
+import SmallHeaders from "../headers/headers/SmallHeaders";
 
 function CheckOtp() {
   const [showOtp, setOtp] = useState(false);
@@ -35,7 +35,7 @@ function CheckOtp() {
               />
             </g>
           </svg>
-          <SmallHeader
+          <SmallHeaders
             headertext="Check your email for an OTP"
             class="otp-header"
           />

@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import { useEffect } from 'react'
 import OtpInput from '../inputs/otpInputs'
 import Paragraph from '../paragraphs'
-import SmallHeader from '../headers/smallHeader';
+import SmallHeaders from '../headers/headers/SmallHeaders';
 
 
 function InputOtp() {
@@ -40,7 +40,7 @@ function InputOtp() {
 
      return (
     <div className='otp-form'>
-        <SmallHeader headertext="Enter the OTP sent to your email address"/>
+        <SmallHeaders headertext="Enter the OTP sent to your email address"/>
         <form action="">
         <div className="otp-inputs">
          <OtpInput type="tel" name="num1"id="num1"change={handleChange} />
