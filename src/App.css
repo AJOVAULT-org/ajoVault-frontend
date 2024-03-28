@@ -310,5 +310,11 @@ body
 /* checkOtp */
 .CheckOtp-model
 {
-  display: none;
+  padding: 30px 20px;
+  background: #FBF9F1;
+  /* background: #ADC4CE; */
+  height: 42vh; 
+  width: 30vw;
+  border-radius: 20px;
+  border: 1px solid #0e0e0e;
 }

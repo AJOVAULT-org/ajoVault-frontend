@@ -17,7 +17,6 @@ const SignUpPage = () => {
     password:"",
     phoneNumber:""
   });
-  // const [btnBg, setBtnBg] = useState({});
   const [showVerificationModal, setShowVerificationModal] = useState(false);
   const [isBtnActive, setBtnAction] = useState({});
 
@@ -27,6 +26,7 @@ const SignUpPage = () => {
     const value = e.target.value;
     setInputs(values =>({...values,[name]:value}));
   }
+
   // to check if form is having values
   useEffect(() => {
     const mandatoryFields = ['fullName', 'email', 'password', 'phoneNumber'];
@@ -52,7 +52,8 @@ const SignUpPage = () => {
 
   return (
     <section className='onBoarding'>
-      {showVerificationModal && <Verification isOpen={showVerificationModal} onClose={() => setShowVerificationModal(false)}/>}
+      {/* {showVerificationModal && <Verification isOpen={showVerificationModal} isClose={() => setShowVerificationModal(false)}/>} */}
+      {showVerificationModal && <Verification isOpen={showVerificationModal} />}
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />
         <div className="text">
