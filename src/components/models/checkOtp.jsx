@@ -7,7 +7,6 @@ function CheckOtp() {
     const [displayCheckOtp, hideCheckOtp] = useState(true);
 
     const handleBtn = () => {
-        console.log("clicked man");
         setOtp(true);
         hideCheckOtp(false);
     }
