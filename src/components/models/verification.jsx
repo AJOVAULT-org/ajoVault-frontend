@@ -9,7 +9,7 @@ function Verification({ isOpen }) {
 
     const handleButtonClick = () => {
         setOtpModal(true);
-        console.log("clicked")
+        // console.log("clicked")
         removeVModal(false);
     }
     return (
