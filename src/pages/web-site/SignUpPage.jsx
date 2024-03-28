@@ -50,38 +50,95 @@ const SignUpPage = () => {
   };
 
   return (
-    <section className='onBoarding'>
+    <section className="onBoarding">
       {/* {showVerificationModal && <Verification isOpen={showVerificationModal} isClose={() => setShowVerificationModal(false)}/>} */}
       {showVerificationModal && <Verification isOpen={showVerificationModal} />}
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />
         <div className="text">
           <h1>achieve your financial goals with our solutions</h1>
-          <Paragraph class="bright-text" ParagraphText="Join other wise Nigerians to revolutionise their personal finance by combining individual savings with pool contribution." />
+          <Paragraph
+            class="bright-text"
+            ParagraphText="Join other wise Nigerians to revolutionise their personal finance by combining individual savings with pool contribution."
+          />
         </div>
       </div>
       <div className="input-side">
         <div className="user-form">
-          <div className="header-text">
-            <Mainheader headertext="Create a secure account" />
-            <Paragraph class="main-paragraph" ParagraphText="Easily meet your saving goals with AjoVault" />
-          </div>
-          <form onSubmit={handleSubmit}>
-            <Inputs change={handleChange} label="Full Name" type="text" id="fullName" name="fullName" value={inputs.fullName || ""} placeholder="Enter your first inputValues then last name" />
-            <Inputs change={handleChange} label="Email Address" type="email" id="email" name="email" value={inputs.email || ""} placeholder="Enter your email address" />
-            <Inputs change={handleChange} label="Phone Number" type="tel" id="phoneNumber" name="phoneNumber" value={inputs.phoneNumber || ""} placeholder="Enter your phone number" />
-            <Inputs change={handleChange} label="Password" type="password" id="password" name="password" value={inputs.password || ""} placeholder="Enter your password" />
-            <Inputs change={handleChange} label="Promo Code (Optional)" type="text" id="promoCode" name="promoCode" value={inputs.promoCode || ""} placeholder="Enter promo code" />
-            <SubmitBtn type="submit" style={isBtnActive} btntext="Create Account" />
-          </form>
-          <div className="footer">
-            <Paragraph class="dark-paragraph" ParagraphText="Already have an account?" />
-            <Link to={"/LogInPage"}><h1>log in</h1></Link>
+          <div className="user-inner">
+            <div className="header-text">
+              <Mainheader headertext="Create a secure account" />
+              <Paragraph
+                class="main-paragraph"
+                ParagraphText="Easily meet your saving goals with AjoVault"
+              />
+            </div>
+            <form onSubmit={handleSubmit}>
+              <Inputs
+                change={handleChange}
+                label="Full Name"
+                type="text"
+                id="fullName"
+                name="fullName"
+                value={inputs.fullName || ""}
+                placeholder="Enter your first inputValues then last name"
+              />
+              <Inputs
+                change={handleChange}
+                label="Email Address"
+                type="email"
+                id="email"
+                name="email"
+                value={inputs.email || ""}
+                placeholder="Enter your email address"
+              />
+              <Inputs
+                change={handleChange}
+                label="Phone Number"
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                value={inputs.phoneNumber || ""}
+                placeholder="Enter your phone number"
+              />
+              <Inputs
+                change={handleChange}
+                label="Password"
+                type="password"
+                id="password"
+                name="password"
+                value={inputs.password || ""}
+                placeholder="Enter your password"
+              />
+              <Inputs
+                change={handleChange}
+                label="Promo Code (Optional)"
+                type="text"
+                id="promoCode"
+                name="promoCode"
+                value={inputs.promoCode || ""}
+                placeholder="Enter promo code"
+              />
+              <SubmitBtn
+                type="submit"
+                style={{ ...isBtnActive, width: "100%" }}
+                btntext="Create Account"
+              />
+            </form>
+            <div className="footer">
+              <Paragraph
+                class="dark-paragraph"
+                ParagraphText="Already have an account?"
+              />
+              <Link to={"/LogInPage"}>
+                <h1>log in</h1>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default SignUpPage;

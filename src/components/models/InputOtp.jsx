@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import { useEffect } from 'react'
 import OtpInput from '../inputs/otpInputs'
-import SmallHeader from '../headers/SmallHeader'
 import Paragraph from '../paragraphs'
+import SmallHeader from '../headers/SmallHeader';
 
 
 function InputOtp() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Paragraph from '../paragraphs';
-import SmallHeader from '../headers/SmallHeader';
 import CheckOtp from './checkOtp';
+import SmallHeader from '../headers/SmallHeader';
 
 function Verification({ isOpen }) {
     const [showOtpModal, setOtpModal] = useState(false);
