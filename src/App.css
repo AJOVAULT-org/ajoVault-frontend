@@ -307,3 +307,8 @@ body
   justify-content: center;
   border-radius: 20px;
 }
+/* checkOtp */
+.CheckOtp-model
+{
+  display: none;
+}
