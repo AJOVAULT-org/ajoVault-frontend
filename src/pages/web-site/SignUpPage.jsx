@@ -72,7 +72,7 @@ const SignUpPage = () => {
             <Inputs change={handleChange} label="Phone Number" type="tel" id="phoneNumber" name="phoneNumber" value={inputs.phoneNumber || ""} placeholder="Enter your phone number" />
             <Inputs change={handleChange} label="Password" type="password" id="password" name="password" value={inputs.password || ""} placeholder="Enter your password" />
             <Inputs change={handleChange} label="Promo Code (Optional)" type="text" id="promoCode" name="promoCode" value={inputs.promoCode || ""} placeholder="Enter promo code" />
-            <SubmitBtn style={isBtnActive} btntext="Create Account" />
+            <SubmitBtn type="submit" style={isBtnActive} btntext="Create Account" />
           </form>
           <div className="footer">
             <Paragraph class="dark-paragraph" ParagraphText="Already have an account?" />
