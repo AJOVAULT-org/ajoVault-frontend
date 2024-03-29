@@ -6,6 +6,7 @@ import Inputs from '../../components/inputs/Main-Inputs';
 import Mainheader from '../../components/headers/Main-header';
 import SubmitBtn from '../../components/buttons/submit-btn';
 import { Link } from 'react-router-dom';
+import '../../styles/Onboarding/onboarding.css'
 
 
 function LogInPage() {
