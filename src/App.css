@@ -473,15 +473,35 @@ body {
   .user-inner {
     width: 70%;
   }
-  .dark-paragraph{
-    color: white;
-  }
+.borders h4::before {
+  width: 120px;
+  top: 26em;
+  left: 31em;
+}
+
+.borders h4::after {
+  width: 120px;
+  top: 26em;
+  left: 41em;
+}
 }
 
 @media (max-width: 700px) {
   .text-side img {
     display: none;
   }
+
+    .borders h4::before {
+      width: 120px;
+      top: 27em;
+      left: 12em;
+    }
+  
+    .borders h4::after {
+      width: 120px;
+      top: 27em;
+      left: 24em;
+    }
 
   .text h1,
   p {
