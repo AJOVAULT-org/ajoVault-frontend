@@ -200,7 +200,6 @@ body {
   text-transform: capitalize;
   font-family: var(--main-font);
   font-weight: 600;
-  /* text-align: start; */
   color: #0e0e0e;
   font-size: 28px;
 }
@@ -216,29 +215,11 @@ body {
 .borders {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 10px;
 }
 
-.borders h4::before {
-  content: "";
-  height: 1px;
-  width: 150px;
-  top: 29em;
-  left: 50em;
-  background: var(--primary-color);
-  position: absolute;
-}
-
-.borders h4::after {
-  content: "";
-  height: 1px;
-  width: 150px;
-  top: 29em;
-  left: 63em;
-  background: var(--primary-color);
-  position: absolute;
-}
 
 .bottom-page {
   display: flex;
@@ -251,7 +232,8 @@ body {
 
 .google-auth {
   border-radius: 40px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: 0px 2px 2px 2px gray;
+  padding: 2px;
   width: fit-content;
 }
 
@@ -474,15 +456,11 @@ body {
     width: 70%;
   }
 .borders h4::before {
-  width: 120px;
-  top: 26em;
-  left: 31em;
+  display: hidden;
 }
 
 .borders h4::after {
-  width: 120px;
-  top: 26em;
-  left: 41em;
+  display: hidden;
 }
 }
 
@@ -492,15 +470,12 @@ body {
   }
 
     .borders h4::before {
-      width: 120px;
-      top: 27em;
-      left: 12em;
+
+      display: hidden;
     }
   
     .borders h4::after {
-      width: 120px;
-      top: 27em;
-      left: 24em;
+      display: hidden;
     }
 
   .text h1,
@@ -527,5 +502,14 @@ body {
     text-transform: capitalize;
     color: white;
     font-size: 600;
+  }
+}
+
+@media (max-width: 600px){
+  .user-inner{
+    margin-top: 20px;
+  }
+  .login-input{
+    gap: 10px;
   }
 }
