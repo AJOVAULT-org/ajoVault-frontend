@@ -13,9 +13,10 @@ body {
 }
 
 .onBoarding {
-   height: 100vh;
+   /* height: 100vh; */
    width: 100vw;
    display: flex;
+
 }
 
 .text-side {
@@ -23,6 +24,7 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    width: 45vw;
+   height: 100vh;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -73,7 +75,7 @@ body {
    font-family: var(--main-font);
    color: #0e0e0e84;
    text-transform: capitalize;
-   font-size: 12px;
+   font-size: 0.8rem;
    font-weight: 500;
 }
 
@@ -82,7 +84,7 @@ body {
    font-family: var(--main-font);
    color: #0e0e0e84;
    text-transform: capitalize;
-   font-size: 12px;
+   font-size: 0.8rem;
    font-weight: 500;
 }
 
@@ -90,7 +92,7 @@ body {
    font-family: var(--main-font);
    color: #0e0e0e;
    text-transform: capitalize;
-   font-size: 12px;
+   font-size: 0.8rem;
    font-weight: 500;
 }
 
@@ -105,21 +107,20 @@ body {
 .input-side {
    display: flex;
    justify-content: center;
+   align-items: center;
    width: 60%;
 }
 
 .user-form {
    width: 100%;
-   padding-top: 5%;
 }
 
 .user-inner {
    width: 55%;
-
 }
 
 .user-input {
-   margin: 10px;
+   padding-top: 10px;
    width: 100%;
 }
 
@@ -130,7 +131,7 @@ body {
    text-align: start;
    width: 100%;
    text-transform: capitalize;
-   font-size: 12px;
+   font-size: 0.9rem;
 }
 
 .user-form {
@@ -140,7 +141,7 @@ body {
 }
 
 .user-form label {
-   font-size: 12px;
+   font-size: 0.8rem;
    font-family: var(--main-font);
    text-transform: capitalize;
 }
@@ -149,14 +150,14 @@ body {
    width: 364px;
    border-radius: 10px;
    color: #f7f7f7;
-   margin-left: 10px;
+   width: 100%;
    font-family: var(--main-font);
    text-transform: capitalize;
-   font-size: 13px;
+   font-size: 1.1rem;
    background-color: var(--fade-color1);
    /* background-color: var(--primary-color); */
-   height: 3em;
-   margin-top: 10px;
+   height: 2.7em;
+   margin-top: 30px;
    margin-bottom: 10px;
 }
 
@@ -207,6 +208,7 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
+   width: 100%;
 
 }
 
@@ -215,7 +217,6 @@ body {
    justify-content: center;
    align-items: center;
    width: 100%;
-   padding: 10px;
 }
 
 
