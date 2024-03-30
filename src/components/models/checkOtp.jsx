@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InputOtp from "./InputOtp";
 import SmallHeaders from "../headers/headers/SmallHeaders";
+import Password from './Password';
 
 function CheckOtp() {
   const [showOtp, setOtp] = useState(false);
