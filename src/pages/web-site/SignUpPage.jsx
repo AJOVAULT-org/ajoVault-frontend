@@ -47,7 +47,7 @@ const SignUpPage = () => {
     e.preventDefault();
     const mandatoryFields = ['fullName', 'email', 'password', 'phoneNumber'];
     const allMandatoryFieldsFilled = mandatoryFields.every(field => inputs[field].trim() !== '');
-    
+    console.log(inputs)
     // verificationmodel
     setShowVerificationModal(true);
   };

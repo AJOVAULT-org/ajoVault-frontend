@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import OtpInput from '../inputs/otpInputs'
 import Paragraph from '../paragraphs'
 import SmallHeaders from '../headers/headers/SmallHeaders';
+import Password from './Password';
 
 
 function InputOtp() {
@@ -12,6 +13,12 @@ function InputOtp() {
         num3: '',
         num4: ''
     });
+
+    const [showForm, hideForm] = useState(false);
+    const [displayPassForm, hidePassForm] = useState(true);
+
+
+
     const [isBtnActive, setBtnAction] = useState({});
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -24,6 +31,8 @@ function InputOtp() {
 
     const handleSubmit=(e)=> {
         e.preventDefault();
+        hidePassForm(false);
+        hideForm(true);
     }
     useEffect(() => {
         const mandatoryFields = ['num1', 'num2', 'num3', 'num4'];
@@ -39,6 +48,9 @@ function InputOtp() {
     
 
      return (
+    <>
+    {displayPassForm && <Password />}
+    {showForm &&(
     <div className='otp-form'>
         <SmallHeaders headertext="Enter the OTP sent to your email address"/>
         <form action="">
@@ -51,7 +63,8 @@ function InputOtp() {
          <Paragraph ParagraphText="Didnt get the PIN ? resend in 5:00"/>
          <button  style={isBtnActive}  onClick={handleSubmit}>next</button>
         </form>
-    </div>
+    </div>)}
+    </>
   )
 }
 
