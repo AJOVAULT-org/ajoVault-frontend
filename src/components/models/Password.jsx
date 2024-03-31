@@ -1,9 +1,18 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Inputs from '../inputs/Main-Inputs';
 import SubmitBtn from '../buttons/submit-btn';
 import SmallHeaders from '../headers/headers/SmallHeaders';
 
 function Password() {
+
+    const [data, setData]=useState();
+
+    const handleChange=(e)=>{
+        const password = e.target.value;
+        console.log(password);
+        setData(password);
+    }
+
   return (
     <div className='password-form'>
     <div>
@@ -16,8 +25,8 @@ function Password() {
         type="password" 
         name="password" 
         placeholder="input your secure password." 
-        change={()=>{}}
-        value=""
+        change={handleChange}
+        value={data}
         />
         <SubmitBtn type="submit" btntext="continue"/>
     </form>
