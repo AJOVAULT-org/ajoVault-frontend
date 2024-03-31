@@ -5,14 +5,17 @@ import SmallHeaders from '../headers/headers/SmallHeaders';
 
 function Password() {
   return (
-    <div className='otp-form'>
-    <SmallHeaders headertext="you're almost done ."/>
-    <SmallHeaders headertext="enter your secure password."/>
-    <form >
+    <div className='password-form'>
+    <div>
+    <SmallHeaders class="passcode-header" headertext="You're almost done ."/>
+    <SmallHeaders class="passcode-header" headertext="Enter your secure password."/>
+    </div>
+    <form  className='password'>
         <Inputs 
+        label="password"
         type="password" 
         name="password" 
-        placeholder="input your email address" 
+        placeholder="input your secure password." 
         change={()=>{}}
         value=""
         />
