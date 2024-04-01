@@ -15,6 +15,7 @@ function Password() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("brooooooooooo");
+        console.log(data)
     };
 
     useEffect(() => {
@@ -31,8 +32,8 @@ function Password() {
     return (
         <div className='password-form'>
             <div>
-                <SmallHeaders className="passcode-header" headertext="You're almost done." />
-                <SmallHeaders className="passcode-header" headertext="Enter your secure password." />
+                <SmallHeaders class="passcode-header" headertext="You're almost done." />
+                <SmallHeaders class="passcode-header" headertext="Enter your secure password." />
             </div>
             <form className='password'>
                 <Inputs 
