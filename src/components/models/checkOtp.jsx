@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import InputOtp from "./InputOtp";
 import SmallHeaders from "../headers/headers/SmallHeaders";
 import Password from './Password';
+import { Fragment } from "react";
 
 function CheckOtp() {
   const [showOtp, setOtp] = useState(false);
@@ -13,7 +14,7 @@ function CheckOtp() {
   };
 
   return (
-    <div>
+    <Fragment>
       {showOtp && <InputOtp />}
       {displayCheckOtp && (
         <div className="CheckOtp-model">
@@ -43,7 +44,7 @@ function CheckOtp() {
           <button onClick={handleBtn}>next</button>
         </div>
       )}
-    </div>
+    </Fragment>
   );
 }
 

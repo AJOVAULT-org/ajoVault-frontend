@@ -4,6 +4,7 @@ import OtpInput from '../inputs/otpInputs'
 import Paragraph from '../paragraphs'
 import SmallHeaders from '../headers/headers/SmallHeaders';
 import Password from './Password';
+import { Fragment } from 'react';
 
 
 function InputOtp() {
@@ -47,7 +48,7 @@ function InputOtp() {
     
     
 
-     return (<div>
+     return (<Fragment>
             {displayPassForm && <Password />}
             {showForm &&(
             <div className='otp-form'>
@@ -63,7 +64,7 @@ function InputOtp() {
             <button  style={isBtnActive}  onClick={handleSubmit}>next</button>
             </form>
             </div>)}
-            </div>)
+            </Fragment>)
 }
 
 export default InputOtp;
