@@ -31,7 +31,6 @@ function InputOtp() {
 
     const handleSubmit=(e)=> {
         e.preventDefault();
-        console.log("fuck you hussein")
         hidePassForm(true);
         hideForm(false);
     }

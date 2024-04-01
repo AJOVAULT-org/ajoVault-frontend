@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import OtpInput from '../inputs/otpInputs';
 import Paragraph from '../paragraphs';
 import SmallHeaders from '../headers/headers/SmallHeaders';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 
 function FourDigitPin() {
     const [pin, setPin] = useState({
@@ -12,7 +12,7 @@ function FourDigitPin() {
         num4: ''
     });
     const [isBtnActive, setBtnAction] = useState({});
-    const history = useHistory();
+    // const history = useHistory();
     const handleChange = (e) => {
         const { name, value } = e.target;
         const sanitizedValue = value.replace(/\D/g, '');
@@ -25,7 +25,7 @@ function FourDigitPin() {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log("pin added");
-        history.push('/');
+        // history.push('/');
     }
 
     useEffect(() => {

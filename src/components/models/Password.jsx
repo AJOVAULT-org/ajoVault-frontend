@@ -18,8 +18,6 @@ function Password() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("brooooooooooo");
-        console.log(data);
         setShowFourDigit(true);
         setShowPassForm(false);
     };
