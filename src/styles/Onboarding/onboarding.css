@@ -483,8 +483,8 @@ body {
    padding: 30px 20px;
    background: #FBF9F1;
    /* background: #ADC4CE; */
-   height: 47%;
-   width: 30%;
+   height: 55%;
+   width: 35%;
    border-radius: 20px;
    display: flex;
    gap: 1em;
@@ -499,7 +499,7 @@ body {
 }
 .pin-form button
 {
-   width:101%;
+   width:105%;
    border-radius: 10px;
    color: #f7f7f7;
    font-family: var(--main-font);
@@ -508,6 +508,19 @@ body {
    background-color: var(--primary-color);
    height: 3.5em;
    pointer-events: visible;  
+}
+.pin-form h1{
+   font-family: var(--main-font);
+   font-size: 25px;
+   font-weight: 400;
+   text-align: center;
+}
+.pin-form p{
+   font-size: 12px;
+   text-align: center;
+   color: #0e0e0e84;
+   text-transform: capitalize;
+   font-weight: 300;
 }
 /* -------media queries-------- */
 @media (max-width: 877px) {
