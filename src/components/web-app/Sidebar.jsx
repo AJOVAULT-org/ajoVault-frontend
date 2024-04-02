@@ -6,7 +6,7 @@ import { MdContactSupport, MdDriveFolderUpload } from "react-icons/md";
 import { LiaNewspaper } from "react-icons/lia";
 import { BiSolidUserCircle } from "react-icons/bi";
 import { HiOutlineLogout } from "react-icons/hi";
-import { ajoLogo } from "../../../public/assets";
+import { ajoLogo } from "../../../public/assets/icons";
 
 
 const Sidebar = ({ isOpen }) => {

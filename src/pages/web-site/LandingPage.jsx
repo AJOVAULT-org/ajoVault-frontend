@@ -1,7 +1,8 @@
 import React from 'react'
-import { ajoLogo2 } from '../../../public/assets';
+import { ajoLogo2 } from '../../../public/assets/icons';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa6';
+// import { createBrowserRouter , re } from 'react-router-dom';
 
 const LandingPage = () => {
   return (

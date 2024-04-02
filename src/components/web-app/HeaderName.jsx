@@ -1,5 +1,5 @@
 import React from 'react'
-import { userImg } from '../../../public/assets'
+import { userImg } from '../../../public/assets/icons';
 import { FaBell } from 'react-icons/fa';
 
 const HeaderName = () => {
@@ -14,4 +14,4 @@ const HeaderName = () => {
   );
 }
 
-export default HeaderName
+export default HeaderName;

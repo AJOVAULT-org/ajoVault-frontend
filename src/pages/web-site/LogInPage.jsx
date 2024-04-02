@@ -1,6 +1,6 @@
 import React ,{useState} from 'react'
 import { useEffect } from 'react';
-import { ajoLogo2 } from '../../../public/assets';
+import { ajoLogo2 } from '../../../public/assets/icons';
 import Paragraph from '../../components/paragraphs';
 import Inputs from '../../components/inputs/Main-Inputs';
 import Mainheader from '../../components/headers/Main-header';
