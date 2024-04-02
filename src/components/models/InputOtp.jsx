@@ -48,22 +48,23 @@ function InputOtp() {
     
 
      return (<Fragment>
-            {displayPassForm && <Password />}
+         {displayPassForm && <Password />}
             {showForm &&(
-            <div className='otp-form'>
-            <SmallHeaders headertext="Enter the OTP sent to your email address"/>
-            <form action="">
-            <div className="otp-inputs">
-            <OtpInput type="tel" name="num1"id="num1"change={handleChange} />
-            <OtpInput type="tel" name="num2"id="num2"change={handleChange} />
-            <OtpInput type="tel" name="num3"id="num3"change={handleChange} />
-            <OtpInput type="tel" name="num4"id="num4"change={handleChange} />
-            </div>
-            <Paragraph ParagraphText="Didnt get the PIN ? resend in 5:00"/>
-            <button  style={isBtnActive}  onClick={handleSubmit}>next</button>
-            </form>
-            </div>)}
-            </Fragment>)
+                <div className='otp-form'>
+                  <SmallHeaders headertext="Enter the OTP sent to your email address"/>
+                    <form action="">
+                        <div className="otp-inputs">
+                        <OtpInput type="tel" name="num1"id="num1"change={handleChange} />
+                        <OtpInput type="tel" name="num2"id="num2"change={handleChange} />
+                        <OtpInput type="tel" name="num3"id="num3"change={handleChange} />
+                        <OtpInput type="tel" name="num4"id="num4"change={handleChange} />
+                        </div>
+                      <Paragraph ParagraphText="Didnt get the PIN ? resend in 5:00"/>
+                     <button  style={isBtnActive}  onClick={handleSubmit}>next</button>
+                    </form>
+                </div>)}
+            </Fragment>
+            )
 }
 
 export default InputOtp;
