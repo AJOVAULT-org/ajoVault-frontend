@@ -6,12 +6,13 @@ import { Fragment } from 'react';
 // import { createBrowserRouter , re } from 'react-router-dom';
 import IsHome from '../../components/web-site/IsHome';
 import NavBar from '../../routes/NavBar';
+import "../../../src/styles/Website/website.css"
 
 const LandingPage = () => {
   return (
     <Fragment>
       <NavBar />
-    <IsHome />
+      <IsHome />
     </Fragment>
   );
 }
