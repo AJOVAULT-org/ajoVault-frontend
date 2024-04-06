@@ -1,11 +1,11 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 function IsHome() {
   return (
     <div className='isHome'>
         <div className="isHome-hero">
 
-            <div className="text-side">
+            <div className="isHome-text">
                 <h1>With your <span>Saving</span></h1>
                 <h1>Powe, You can</h1>
                 <h1>Build <span>Wealth</span></h1>
@@ -16,6 +16,7 @@ function IsHome() {
             </div>
 
             <div className="img-side">
+
                 {/* {heroIMg} */}
             </div>
         </div>
