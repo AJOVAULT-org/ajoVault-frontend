@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa6';
 import { Fragment } from 'react';
 // import { createBrowserRouter , re } from 'react-router-dom';
+import IsHome from '../../components/web-site/IsHome';
 
 const LandingPage = () => {
   return (
@@ -28,7 +29,7 @@ const LandingPage = () => {
           </h1>
         </Link>
       </div>
-      
+    <IsHome />
     </Fragment>
   );
 }

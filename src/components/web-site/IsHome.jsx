@@ -1,5 +1,4 @@
 import React from 'react';
-import {heroIMg} from "../../../public/assets/images/Hero image.jpg"
 
 function IsHome() {
   return (
@@ -17,7 +16,7 @@ function IsHome() {
             </div>
 
             <div className="img-side">
-                {heroIMg}
+                {/* {heroIMg} */}
             </div>
         </div>
         <Link to={"/signup"}>
