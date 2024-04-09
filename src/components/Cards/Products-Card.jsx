@@ -5,7 +5,7 @@ import Paragraph from '../paragraphs';
 function ProductsCard(props) {
   return (
     <div className='card'>
-        <div className="icon"></div>
+        <img src={props.icon}/>
         
         <div className="card-text">
         <SmallHeaders headertext={props.headerText} class="card-headers"/>

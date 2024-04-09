@@ -139,8 +139,8 @@
 .icon{
     width: 100px ;
     height: 100px;
-    background: #0e0e0e;
-    border-radius: 50px;
+    /* background: #0e0e0e; */
+    /* border-radius: 50px; */
 }
 .card-text h1
 {
