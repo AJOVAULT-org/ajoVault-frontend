@@ -1,31 +1,34 @@
 import React from 'react'
-import { ajoLogo2 } from '../../../public/assets';
+import { ajoLogo2 } from '../../../public/assets/icons';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa6';
+import { Fragment } from 'react';
+// import { createBrowserRouter , re } from 'react-router-dom';
+import IsHome from '../../components/web-site/IsHome';
+import NavBar from '../../routes/NavBar';
+import "../../../src/styles/Website/website.css"
+import Products from '../../components/web-site/Products';
 
 const LandingPage = () => {
   return (
-    <div className="bg-white h-screen flex flex-col justify-between">
-      <div className="flex justify-between items-center px-[5%] w-full h-[130px] shadow-lg bg-transparent shadow-black/10">
-        <img src={ajoLogo2} className=" h-[40px] lg:h-[70px]" alt="logo" />
-        <div className="gap-9 flex justify-center items-center">
-          <button className="lg:text-[24px] font-medium hidden mds:flex">
-            Contact Us
-          </button>
-          <Link to={"/signup"}>
-            <button className="bg-primary lg:px-12 px-4 py-4 rounded-[8px] text-white lg:text-[24px] font-semibold">
-              Get Started
-            </button>
-          </Link>
-        </div>
-      </div>
-      <Link to={"/user/home"}>
-        <h1 className="w-full flex justify-start items-center gap-5 italic font-semibold text-primary text-[24px] px-4 pb-4">
-          Into the dashboard <FaArrowRight/>
-        </h1>
-      </Link>
-    </div>
+    <Fragment>
+      <NavBar />
+      <IsHome />
+      <Products />
+    </Fragment>
   );
 }
 
 export default LandingPage;
+
+{/* <Link to={"/signup"}>
+<button className="bg-primary lg:px-12 px-4 py-4 rounded-[8px] text-white lg:text-[24px] font-semibold">
+  Get Started
+</button>
+</Link> */}
+
+{/* <Link to={"/user/home"}>
+<h1 className="w-full flex justify-start items-center gap-5 italic font-semibold text-primary text-[24px] px-4 pb-4">
+  Into the dashboard <FaArrowRight/>
+</h1>
+</Link> */}

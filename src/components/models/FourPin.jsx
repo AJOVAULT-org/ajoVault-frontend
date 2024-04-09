@@ -24,7 +24,6 @@ function FourDigitPin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("pin added");
         // history.push('/');
     }
 

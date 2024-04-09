@@ -17,7 +17,6 @@ function InputOtp() {
 
     const [displayPassForm, hidePassForm] = useState(false);
     const [showForm, hideForm] = useState(true);
-
     const [isBtnActive, setBtnAction] = useState({});
     
     const handleChange = (e) => {
