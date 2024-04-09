@@ -96,7 +96,7 @@
 /* products section */
 .products-section
 {
-    background: #0e0e0eb8;
+    /* background: #0e0e0eb8; */
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -117,10 +117,11 @@
     display: flex;
     gap: 20px;
     padding: 0px 40px;
+    justify-content: center;
 }
 .card
 {
-    width: 50%;
+    width: 20%;
     height: 430px;
     display: flex;
     flex-direction: column;
@@ -147,6 +148,7 @@
 {
     font-size: 18px;
     margin-top: 30px;
+
     text-transform: capitalize;
     color: #0e0e0eb8;
 }
