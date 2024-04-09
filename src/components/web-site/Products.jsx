@@ -11,7 +11,6 @@ function Products() {
             <ProductsCard headerText="individual savings" ParagraphText="automated savings plans with goal setting option"/>
             <ProductsCard headerText="individual savings" ParagraphText="automated savings plans with goal setting option"/>
             <ProductsCard headerText="individual savings" ParagraphText="automated savings plans with goal setting option"/>
-            <ProductsCard headerText="individual savings" ParagraphText="automated savings plans with goal setting option"/>
         </div>
     </div>
   );
