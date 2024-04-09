@@ -17,8 +17,6 @@ function IsHome() {
             </div>
 
             <div className="img-side">
-
-                {/* {heroIMg} */}
             </div>
         </div>
     <GetStartedBtn />
