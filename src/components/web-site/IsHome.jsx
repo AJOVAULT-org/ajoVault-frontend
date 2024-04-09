@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GetStartedBtn from '../buttons/GetStartedBtn';
 function IsHome() {
   return (
     <div className='isHome'>
@@ -20,11 +21,7 @@ function IsHome() {
                 {/* {heroIMg} */}
             </div>
         </div>
-        <Link to={"/signup"}>
-            <button className="bg-primary lg:px-12 px-4 py-4 rounded-[8px] text-white lg:text-[24px] font-semibold">
-              Get Started
-            </button>
-          </Link>
+    <GetStartedBtn />
     </div>
   )
 }
