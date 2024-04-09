@@ -93,3 +93,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* products section */
+.products-section
+{
+    /* background: #0e0e0e; */
+    height: 80vh;
+}

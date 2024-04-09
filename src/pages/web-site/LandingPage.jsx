@@ -7,12 +7,14 @@ import { Fragment } from 'react';
 import IsHome from '../../components/web-site/IsHome';
 import NavBar from '../../routes/NavBar';
 import "../../../src/styles/Website/website.css"
+import Products from '../../components/web-site/Products';
 
 const LandingPage = () => {
   return (
     <Fragment>
       <NavBar />
       <IsHome />
+      <Products />
     </Fragment>
   );
 }
