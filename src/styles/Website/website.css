@@ -98,4 +98,48 @@
 {
     /* background: #0e0e0e; */
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.products-header h1
+{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: var(--main-font);
+}
+/* cards */
+.card
+{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+    background: #d7d7d750;
+    border-radius: 20px;
+    border-top:  10px solid rgba(90, 71, 207, 1);
+}
+.icon{
+    width: 70px ;
+    height: 70px;
+    background: #0e0e0e;
+    border-radius: 40px;
+}
+.card-text h1
+{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: var(--main-font);
+}
+.card-text p
+{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #0e0e0eb8;
 }
