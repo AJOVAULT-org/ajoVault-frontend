@@ -116,6 +116,7 @@
 {
     display: flex;
     gap: 20px;
+    padding: 0px 40px;
 }
 .card
 {
@@ -125,27 +126,27 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    justify-content: center;
     gap: 20px;
     background: #d7d7d750;
     border-radius: 20px;
     border-top:  10px solid rgba(90, 71, 207, 1);
 }
 .icon{
-    width: 70px ;
-    height: 70px;
+    width: 100px ;
+    height: 100px;
     background: #0e0e0e;
-    border-radius: 40px;
+    border-radius: 50px;
 }
 .card-text h1
 {
-    font-size: 30px;
+    font-size: 24px;
     text-transform: capitalize;
     font-family: var(--main-font);
 }
 .card-text p
 {
-    font-size: 25px;
+    font-size: 18px;
+    margin-top: 30px;
     text-transform: capitalize;
     color: #0e0e0eb8;
 }
