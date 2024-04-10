@@ -110,6 +110,7 @@
 .products-header h1
 {
     font-size: 50px;
+    color: var(--primary-color);
     text-transform: capitalize;
     font-weight: 500;
     font-family: var(--main-font);
@@ -141,6 +142,13 @@
     height: 100px;
     /* background: #0e0e0e; */
     /* border-radius: 50px; */
+}
+.card img
+{
+    width: 100px ;
+    height: 100px;
+    background: #0e0e0e; 
+    border-radius: 50px;
 }
 .card-text h1
 {
