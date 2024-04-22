@@ -8,7 +8,7 @@ function NavBar() {
    <header className='nav-items'>
     <img src={ajoLogo2} alt="" />
     <nav className='nav-links'>
-        <Link to="#"><li>contact us</li></Link>
+        <Link to={"/user/home"}><li>contact us</li></Link>
         <GetStartedBtn />
     </nav>
    </header>
