@@ -8,7 +8,7 @@ function IsHome() {
 
             <div className="isHome-text">
                 <h1>With your <span>Saving</span></h1>
-                <h1>Powe, You can</h1>
+                <h1>Power, You can</h1>
                 <h1>Build <span>Wealth</span></h1>
                <p>Join other wise Nigerians to revolutionize
                 their personal finance, by combining
@@ -17,8 +17,6 @@ function IsHome() {
             </div>
 
             <div className="img-side">
-
-                {/* {heroIMg} */}
             </div>
         </div>
     <GetStartedBtn />
