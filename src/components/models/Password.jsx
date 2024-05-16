@@ -36,16 +36,14 @@ function Password() {
       <Fragment>
         {showFourDigit && <FourDigitPin />}
         {showPassForm && (
-          <div className="password-form">
-            <div>
-              <p className="text-primary text-[20px]">You're almost done.</p>
-              <p className="text-primary text-[20px]">
-                Enter your secure password.
-              </p>
+          <div className="bg-white py-4 px-4 lgss:w-[30%] w-[70%] rounded-[8px]">
+            <div className="text-center text-[1.6rem]">
+              <p className="">You're almost done.</p>
+              <p className="">Enter your secure password.</p>
             </div>
-            <form className="password">
+            <form className="px-[5%]">
               <Inputs
-                label="password"
+                label="Password"
                 type="password"
                 name="password"
                 placeholder="Input your secure password."
@@ -55,7 +53,7 @@ function Password() {
               <SubmitBtn
                 click={handleSubmit}
                 type="submit"
-                btntext="continue"
+                btntext="Continue"
                 style={isBtnActive}
               />
             </form>

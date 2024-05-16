@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         primary: "#4839A6",
         secondary: "#5E0035",
-        green: "#307C29",
+        faintBtn: "#B5AAFC",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],

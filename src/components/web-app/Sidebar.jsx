@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen }) => {
   }, [location.pathname]);
   return (
     <>
-      <div className="lgss:w-1/5 h-screen flex flex-col font-montserrat shadow-lg pt-[40px] shadow-gray-400/50 justify-center items-center bg-primary text-white pb-10">
+      <div className="h-screen  lgss:w-1/5 hidden lgss:flex flex-col shadow-sm border-r-[1px] pt-[40px] bg-primary text-white shadow-gray-400/10 pb-10 z-10 fixed">
         <div className="h-full ">
           <img src={ajoLogo} className="h-[40px] lg:h-[70px]" alt="" />
           <div className=" w-full h-full pb-10 pt-20 flex flex-col gap-3 justify-between items-center">

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import InputOtp from "./InputOtp";
-import SmallHeaders from "../headers/headers/SmallHeaders";
-import Password from './Password';
 import { Fragment } from "react";
 
 function CheckOtp() {
@@ -17,7 +15,7 @@ function CheckOtp() {
     <Fragment>
       {showOtp && <InputOtp />}
       {displayCheckOtp && (
-        <div className="CheckOtp-model">
+        <div className="flex flex-col justify-center items-center bg-white lgss:w-[30%] w-[70%] p-5 rounded-[16px]">
           <svg
             width="50px"
             height="50px"
@@ -37,10 +35,10 @@ function CheckOtp() {
               />
             </g>
           </svg>
-          <p className="text-primary text-[20px]">
+          <h2 className="text-primary text-[20px] px-[25%] text-center pt-2">
             Check your email for an OTP
-          </p>
-          <button onClick={handleBtn}>next</button>
+          </h2>
+          <button className="bg-primary w-full p-2 text-white mt-4" onClick={handleBtn}>Next</button>
         </div>
       )}
     </Fragment>

@@ -8,12 +8,17 @@ import Home from "../../components/dashboard-components/home/home";
 const DashboardPage = () => {
 
   return (
-    <div className="max-w-full h-screen flex font-montserrat">
+    <div className="max-w-full flex flex-col lgss:flex-row ">
+      <div className="w-[20%]">
+        <Sidebar />
+      </div>
 
-      <Sidebar />
-      <div className="w-4/5 bg- h-full p-[5%]">
-        <HeaderName />
-        <Home />
+      <div className="font-montserrat flex flex-col lgss:w-[80%] z-0">
+        <div className="h-full px-[5%]">
+          <HeaderName />
+          <Home />
+          <Home />
+        </div>
       </div>
     </div>
   );

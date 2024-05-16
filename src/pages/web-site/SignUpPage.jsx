@@ -6,7 +6,6 @@ import Mainheader from '../../components/headers/Main-header';
 import Paragraph from '../../components/paragraphs';
 import SubmitBtn from '../../components/buttons/submit-btn';
 import Verification from '../../components/models/verification';
-import "../../styles/Onboarding/onboarding.css";
 
 
 const SignUpPage = () => {
@@ -50,7 +49,7 @@ const SignUpPage = () => {
   };
 
   return (
-    <section className="onBoarding">
+    <section className="flex h-screen">
       {showVerificationModal && <Verification isOpen={showVerificationModal} />}
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />

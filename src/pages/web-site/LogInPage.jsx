@@ -36,7 +36,7 @@ function LogInPage() {
     
   }
   return (
-    <section className="onBoarding">
+    <section className="flex h-screen">
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />
         <div className="text">

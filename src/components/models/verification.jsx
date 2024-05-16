@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Paragraph from "../paragraphs";
 import CheckOtp from "./checkOtp";
-import SmallHeaders from "../headers/headers/SmallHeaders";
 
 function Verification({ isOpen }) {
   const [showOtpModal, setOtpModal] = useState(false);
@@ -15,11 +13,11 @@ function Verification({ isOpen }) {
     <div className="Main-overlay h-full">
       {showOtpModal && <CheckOtp />}
       {displayVmodal && (
-        <div className="vModal">
-          <button className="close" onClick={handleButtonClick}>
+        <div className="bg-white lgss:w-[35%] w-[70%] p-5 rounded-[16px] relative">
+          <button className="rounded-full p-2 border absolute -right-12 -top-5 bg-white" onClick={handleButtonClick}>
             <svg
-              width="40px"
-              height="40px"
+              width="30px"
+              height="30px"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -30,17 +28,14 @@ function Verification({ isOpen }) {
               />
             </svg>
           </button>
-          <div className="verification-model">
-            <Paragraph
-              ParagraphText=" We need you to verify email address ar***e@gmail.com"
-              class="model-paragraph"
-            />
-            <Paragraph
-              ParagraphText="please select how you want to be verified below"
-              class="model-paragraph-small"
-            />
-            <div className="email-box">
-              <div className="header">
+          <div className="">
+            <h2 className="text-[20px] text-center">
+              We need you to verify email address ar***e@gmail.com
+            </h2>
+            <h4 className="text-[12px] text-center">
+              please select how you want to be verified below
+            </h4>
+            <div className="bg-faintBtn text-white mt-4 flex gap-2 p-2 rounded-[8px]">
                 <svg
                   width="30px"
                   height="30px"
@@ -60,12 +55,12 @@ function Verification({ isOpen }) {
                     />
                   </g>
                 </svg>
-                <p className="text-primary text-[20px]">Verify with email</p>
+              <div className="flex flex-col">
+                <p className="text-[20px]">Verify with email</p>
+              <h3 className="text-[12px]">
+                We will send you an OTP to your number through Whatsapp and sms
+              </h3>
               </div>
-              <Paragraph
-                ParagraphText="We will send you an OTP to your number through Whatsapp and sms"
-                class="veri-paragraph"
-              />
             </div>
           </div>
         </div>
