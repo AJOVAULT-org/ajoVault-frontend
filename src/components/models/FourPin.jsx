@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import OtpInput from '../inputs/otpInputs';
 import Paragraph from '../paragraphs';
 import SmallHeaders from '../headers/headers/SmallHeaders';
-// import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 function FourDigitPin() {
+    const navigate = useNavigate();
     const [pin, setPin] = useState({
         num1: '',
         num2: '',
@@ -24,7 +25,7 @@ function FourDigitPin() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // history.push('/');
+        navigate("/user/home");
     }
 
     useEffect(() => {

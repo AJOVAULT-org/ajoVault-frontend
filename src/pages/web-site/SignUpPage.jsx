@@ -10,9 +10,6 @@ import "../../styles/Onboarding/onboarding.css";
 
 
 const SignUpPage = () => {
-
-  // states
-
   const [inputs ,setInputs]= useState({
     fullName:"",
     email:"",
@@ -54,7 +51,6 @@ const SignUpPage = () => {
 
   return (
     <section className="onBoarding">
-      {/* {showVerificationModal && <Verification isOpen={showVerificationModal} isClose={() => setShowVerificationModal(false)}/>} */}
       {showVerificationModal && <Verification isOpen={showVerificationModal} />}
       <div className="text-side">
         <img src={ajoLogo2} alt="Ajo Logo" />

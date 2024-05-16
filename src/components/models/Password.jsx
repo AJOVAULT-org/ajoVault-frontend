@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react';
 import Inputs from '../inputs/Main-Inputs';
 import SubmitBtn from '../buttons/submit-btn';
-import SmallHeaders from '../headers/headers/SmallHeaders';
 import FourDigitPin from './FourPin';
 
 function Password() {
@@ -34,28 +33,35 @@ function Password() {
     }, [data]);
 
     return (
-        <Fragment>
-            {showFourDigit && <FourDigitPin />}
-            {showPassForm && (
-                <div className='password-form'>
-                    <div>
-                        <SmallHeaders class="passcode-header" headertext="You're almost done." />
-                        <SmallHeaders class="passcode-header" headertext="Enter your secure password." />
-                    </div>
-                    <form className='password'>
-                        <Inputs 
-                            label="password"
-                            type="password" 
-                            name="password" 
-                            placeholder="Input your secure password." 
-                            change={handleChange}
-                            value={data.password}
-                        />
-                        <SubmitBtn click={handleSubmit} type="submit" btntext="continue" style={isBtnActive} />
-                    </form>
-                </div>
-            )}
-        </Fragment>
+      <Fragment>
+        {showFourDigit && <FourDigitPin />}
+        {showPassForm && (
+          <div className="password-form">
+            <div>
+              <p className="text-primary text-[20px]">You're almost done.</p>
+              <p className="text-primary text-[20px]">
+                Enter your secure password.
+              </p>
+            </div>
+            <form className="password">
+              <Inputs
+                label="password"
+                type="password"
+                name="password"
+                placeholder="Input your secure password."
+                change={handleChange}
+                value={data.password}
+              />
+              <SubmitBtn
+                click={handleSubmit}
+                type="submit"
+                btntext="continue"
+                style={isBtnActive}
+              />
+            </form>
+          </div>
+        )}
+      </Fragment>
     );
 }
 

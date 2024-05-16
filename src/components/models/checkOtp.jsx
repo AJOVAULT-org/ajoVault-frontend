@@ -37,10 +37,9 @@ function CheckOtp() {
               />
             </g>
           </svg>
-          <SmallHeaders
-            headertext="Check your email for an OTP"
-            class="otp-header"
-          />
+          <p className="text-primary text-[20px]">
+            Check your email for an OTP
+          </p>
           <button onClick={handleBtn}>next</button>
         </div>
       )}

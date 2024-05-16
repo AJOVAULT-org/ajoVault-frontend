@@ -13,7 +13,6 @@ body {
 }
 
 .onBoarding {
-   /* height: 100vh; */
    width: 100vw;
    display: flex;
 
@@ -24,7 +23,6 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    width: 45vw;
-   height: 100vh;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -126,7 +124,7 @@ body {
 
 .user-input input {
    border: 1px solid var(--fade-color2);
-   height: 3em;
+   height: 2em;
    border-radius: 5px;
    text-align: start;
    width: 100%;
@@ -155,8 +153,7 @@ body {
    text-transform: capitalize;
    font-size: 1.1rem;
    background-color: var(--fade-color1);
-   /* background-color: var(--primary-color); */
-   height: 2.7em;
+   height: 2.2em;
    margin-top: 30px;
    margin-bottom: 10px;
 }
@@ -247,7 +244,7 @@ body {
 /*----------------------- modals ---------------------*/
 .Main-overlay {
    background: #0f0f0f7e;
-   height: 100vh;
+   /* height: 100vh; */
    width: 100vw;
    font-family: var(--main-font);
    position: absolute;
@@ -266,11 +263,8 @@ body {
 .verification-model {
    padding: 20px 5%;
    background: #FBF9F1;
-   /* background: #ADC4CE; */
-   height: 40vh;
    width: 30vw;
    border-radius: 20px;
-   /* border: 1px solid #0e0e0e; */
 }
 
 .model-paragraph p {
@@ -278,7 +272,6 @@ body {
    line-height: 30px;
    text-align: center;
    font-weight: 300;
-   /* width: 18em; */
 }
 
 .header {
@@ -308,7 +301,6 @@ body {
 
 .veri-paragraph p {
    font-size: 12px;
-   /* text-align: center; */
    font-weight: 300;
    padding-left: 13%;
 }
@@ -318,7 +310,6 @@ body {
    top: 11em;
    left: 56em;
    background: #f7f7f7;
-   /* border: #0e0e0e 1px solid; */
    width: 40px;
    height: 40px;
    padding: 10px;
@@ -333,11 +324,9 @@ body {
 .CheckOtp-model {
    padding: 30px 20px;
    background: #FBF9F1;
-   /* background: #ADC4CE; */
    height: 42vh;
    width: 30vw;
    border-radius: 20px;
-   /* border: 1px solid #0e0e0e; */
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -353,7 +342,6 @@ body {
    text-transform: capitalize;
    font-size: 13px;
    background-color: var(--primary-color);
-   /* background-color: var(--primary-color); */
    height: 5em;
    margin-top: 10px;
    pointer-events: visible;
@@ -380,8 +368,6 @@ body {
 .otp-form {
    padding: 30px 20px;
    background: #FBF9F1;
-   /* background: #ADC4CE; */
-   height: 53vh;
    width: 37vw;
    display: flex;
    align-items: center;
@@ -437,7 +423,6 @@ body {
    padding: 30px 20px;
    background: #FBF9F1;
    /* background: #ADC4CE; */
-   height: 47%;
    width: 30%;
    border-radius: 20px;
    display: flex;
@@ -482,8 +467,6 @@ body {
 {
    padding: 30px 20px;
    background: #FBF9F1;
-   /* background: #ADC4CE; */
-   height: 55%;
    width: 35%;
    border-radius: 20px;
    display: flex;
